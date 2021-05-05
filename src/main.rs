@@ -60,6 +60,15 @@ fn main() {
 
     // LOOP UNTIL A CRITERIA IS MET WITH WHILE LOOPS
 
+    // A while expression loops until a predicate is false.
+    // If the loop conditional expression evaluates to true, the loop body block executes. Control then returns to the loop conditional expression. If the loop conditional expression evaluates to false, the while expression completes.
+
+    let mut counter = 0;
+
+    while counter < 10 {
+        println!("Hello, {}", counter);
+        counter = counter + 1;
+    };
 
 }
 
