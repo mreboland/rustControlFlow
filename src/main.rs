@@ -70,5 +70,23 @@ fn main() {
         counter = counter + 1;
     };
 
+    // ITERATE WITH FOR LOOPS
+
+    // A for expression extracts values from an iterator. It loops until the iterator is empty.
+    // In Rust, an iterator is any type that can iterate over values. Some values can be iterated over directly and others can produce iterators by calling methods like .iter().
+
+    let a = [10, 20, 30, 40, 50];
+
+    // The code iterates through each element in the array and binds it to the element variable. The println! macro then prints each of those values in sequence.
+    for element in a.iter() {
+        println!("The value is: {}" , element);
+    };
+
+    // Another easy way to create an iterator is to use the range notation a..b. This notation yields values from a (inclusive) to b (exclusive) in steps of one.
+
+    for item in 0..5 {
+        println!("{}", item *2);
+    };
+
 }
 
