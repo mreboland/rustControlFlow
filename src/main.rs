@@ -36,4 +36,30 @@ fn main() {
     };
     // If a condition expression evaluates to true, the consequent block is executed. Any subsequent else if or else block is skipped. Because 6 is divisible by 3 it runs and everything else is skipped.
 
+    // LOOPING WITH LOOP
+
+    // A loop expression denotes an infinite loop. It repeats execution of its body continuously.
+
+    // loop {
+    //     println!("I loop forever!");
+    // };
+
+    // Unlike other kinds of loops in Rust like while and for, loop can be used in expressions that return values via break.
+
+    let mut i = 1;
+
+    let something = loop {
+        i *= 2;
+        if i > 100 {
+            break i;
+        }
+    };
+    assert_eq!(something, 128);
+
+    // Every break in a loop must have the same type. When it's not explicitly giving something, break; return (), and empty tuple.
+
+    // LOOP UNTIL A CRITERIA IS MET WITH WHILE LOOPS
+
+
 }
+
